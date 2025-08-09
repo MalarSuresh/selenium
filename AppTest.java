@@ -1,4 +1,4 @@
-package RestPJT.RestPJT;
+package com.cucumberPJT;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
