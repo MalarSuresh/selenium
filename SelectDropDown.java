@@ -1,4 +1,4 @@
-package com.SampleTesting;
+package com.WebDrMgr;
 
 import java.util.List;
 import org.openqa.selenium.By;
@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class SelectDropDown {
 	static Select sdd;
 	static WebDriver driver;
@@ -16,8 +18,10 @@ public class SelectDropDown {
 	public static void singleDropDown() {
 //		System.setProperty("webdriver.edge.driver", ".//Drivers//msedgedriver.exe");
 //		driver=new EdgeDriver();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\malar\\eclipse-workspace\\SeleniumProjects\\Drivers\\chromedriver.exe");		
-		driver=new ChromeDriver();
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\malar\\eclipse-workspace\\SeleniumProjects\\Drivers\\chromedriver.exe");		
+//		driver=new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().refresh();
 		driver.get("https://www.amazon.in");
