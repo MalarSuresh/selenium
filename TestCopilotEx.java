@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+//this is a test class to test copilot
 public class TestCopilotEx {
 	int a = 10;
 	int b = 20;
@@ -15,6 +15,7 @@ public class TestCopilotEx {
 	public static int getSum(int a, int b, int c) {
 		return a + b + c;
 	}
+	
 	//method to get biggest of 3 numbers
 	public static int getBiggest(int a, int b, int c) {
 		if (a >= b && a >= c) {
@@ -23,8 +24,10 @@ public class TestCopilotEx {
 			return b;
 		} else {
 			return c;
+			
 		}
 	}
+	
 	//method to get smallest of 3 numbers
 	public static int getSmallest(int a, int b, int c) {
 		if (a <= b && a <= c) {
@@ -35,6 +38,7 @@ public class TestCopilotEx {
 			return c;
 		}
 	}
+	
 	//run the methods	
 	public static void runMethods() {
 		int sum = getSum(10, 20, 30);
@@ -76,8 +80,8 @@ public class TestCopilotEx {
 	//navigate to a website
 	driver.get("https://www.amazon.com");
 	//check if browser launch is done
-	driver.getTitle();
-	driver.getCurrentUrl();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
 	driver.getPageSource();
 	driver.manage().window().getSize();
 	driver.manage().window().getPosition();
@@ -88,6 +92,7 @@ public class TestCopilotEx {
 	} else {
 		System.out.println("No browser to close.");		
 	}	
+		
 }
 
 	
